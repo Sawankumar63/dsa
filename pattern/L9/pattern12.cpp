@@ -11,36 +11,48 @@ int main()
         {
             cout<<"  ";
         }
-        for (int j=0;j<=n;j++)
-        {
-            if (j==n-i || j==n+i-2)
+            if (i==1)
             {
                 cout<<"* ";
             }
             else
             {
-                cout<<"  ";
+                cout<<"*  ";
+                for (int j=1;j<=2*i-3;j++ )
+                {
+                    cout<<"  ";
+                }
+                cout<<"* ";
+                
             }
-        }
+
         cout<<endl;
     }
-
-     for(int i=n-1;i>=1;i--)
+       for(int i=n-1;i>=1;i--)
     {
-        for (int j=0;j<=n;j++)
+        for(int j=1;j<=n-i;j++)
         {
-            if(j==n+i+3)
+            cout<<"  ";
+        }
+            if (i==1)
             {
                 cout<<"* ";
             }
             else
             {
-                cout<<"  ";
+                cout<<"*  ";
+                for (int j=1;j<=2*i-3;j++ )
+                {
+                    cout<<"  ";
+                }
+                cout<<"* ";
+                
             }
-        }
+
         cout<<endl;
     }
       
+     
     return 0;
     }
         
